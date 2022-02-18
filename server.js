@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const fs = require("fs");
+const uuid = require('./helpers/uuid');
 
 
 const app = express();
@@ -22,7 +23,7 @@ app.use(express.static(__dirname));
 //   res.sendFile(path.join(__dirname, '/public/pages/404.html'))
 // );
 
-require('./routes/notes')(app);
+require('./routes/routes')(app);
 
 app.listen(PORT, () =>
   console.log(`App listening at http://localhost:${PORT} 🚀`)

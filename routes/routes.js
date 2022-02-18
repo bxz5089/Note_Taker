@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const uuid = require('./helpers/uuid');
 
 module.exports = app => {
 
@@ -8,7 +9,7 @@ module.exports = app => {
 
         if (err) throw err;
 
-        var notes = JSON.parse(data);
+        const notes = JSON.parse(data);
 
         // API ROUTES
         // ========================================================
@@ -16,7 +17,7 @@ module.exports = app => {
         // Setup the /api/notes get route
         app.get("/api/notes", function(req, res) {
             // Read the db.json file and return all saved notes as JSON.
-            res.json(notes);
+            res.status(200).json(notes);
         });
 
         // Setup the /api/notes post route
@@ -31,7 +32,7 @@ module.exports = app => {
         // Retrieves a note with specific id
         app.get("/api/notes/:id", function(req,res) {
             // display json for the notes array indices of the provided id
-            res.json(notes[req.params.id]);
+            res.status(200).json(notes[req.params.id]);
         });
 
         // Deletes a note with specific id
