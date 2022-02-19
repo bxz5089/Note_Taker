@@ -1,10 +1,9 @@
-# Note_Taker
+# Simple Note Taker
 
 ---
 ## Description
 
 Modify starter code to create an application called Note Taker that can be used to write and save notes. This application will use an Express.js back end and will save and retrieve note data from a JSON file.
-
 
 ---
 ## Table of Contents
@@ -19,8 +18,6 @@ Modify starter code to create an application called Note Taker that can be used 
 
 - [Questions](##Questions)
 
-
-
 ---
 ## Installation
 
@@ -29,28 +26,24 @@ Modify starter code to create an application called Note Taker that can be used 
 - Within the terminal, use npm install to install the needed package
 - The command-line application should work when npm start is entered in the terminal 
 
-
 ---
 ## Usage
 
 This application can allow users to quickly and easily track notes.
 
 ### Screenshot:
-![alt text](assets/img/ScreenShot1.png)
+![alt text](public/assets/img/ScreenShot1.png)
+![alt text](public/assets/img/ScreenShot2.png)
 
-### Walkthrough Video:
-[![Watch the video](assets/img/ScreenShot2.png)](https://drive.google.com/file/d/1Oslm6RCPScErXn4-AufZ6xFKltaEgI30/view?usp=sharing)
-
+### Deployment: [Heroku](https://arcane-brook-68952.herokuapp.com/notes) [GitHub Pages](https://bxz5089.github.io/Note_Taker/)
 
 --- 
- 
  ## License 
  
  https://opensource.org/licenses/MIT
 
 ---
 ## Tests
-
 There are no tests for this application.
 
 ---
